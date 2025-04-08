@@ -1,0 +1,9 @@
+services:
+  store_ror:
+    build: .
+    user: "0:0"
+    volumes:
+      - .:/rails
+    ports:
+      - 3000:80
+
