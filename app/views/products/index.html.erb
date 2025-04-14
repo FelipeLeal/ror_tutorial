@@ -1,3 +1,5 @@
+
+<%= link_to "Login", new_session_path unless authenticated? %>
 <h1>Products#index</h1>
 <p>Find me in app/views/products/index.html.erb</p>
 <h1>Products</h1>
@@ -5,7 +7,7 @@
 <%# <%= debug @products %>
 
 
-<%= link_to "New product", new_product_path %>
+<%= link_to "New product", new_product_path if authenticated? %>
 <br/>
 <br/>
 
